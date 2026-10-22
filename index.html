@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashant Kumar Singh | Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FAFAFA;
+            --text-main: #111111;
+            --text-muted: #475569;
+            --accent: #004b87;
+            --card-bg: #FFFFFF;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        header {
+            margin-bottom: 4rem;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.03em;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            font-family: 'Lora', serif;
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 700px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid #E2E8F0;
+            padding-bottom: 0.5rem;
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+        .project-tags {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+        .project-desc {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background 0.2s;
+        }
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #003865;
+        }
+        .btn-secondary {
+            background-color: #F1F5F9;
+            color: var(--text-main);
+            border: 1px solid #E2E8F0;
+        }
+        .btn-secondary:hover {
+            background-color: #E2E8F0;
+        }
+        .skills-list {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li {
+            background-color: #F1F5F9;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Prashant Kumar Singh</h1>
+            <div class="subtitle">MSc Data Science @ Stockholm University</div>
+            <p>I build end-to-end machine learning systems, from rigorous statistical modeling and reinforcement learning to interactive, production-ready web applications.</p>
+            <p>Currently researching ML for coordinated beamforming at Huawei R&D.</p>
+        </header>
+
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            
+            <!-- Project 1: Bandit -->
+            <div class="project-card">
+                <div class="project-title">The Stockholm Personalization Problem</div>
+                <div class="project-tags">Python • Reinforcement Learning • LinUCB • Streamlit</div>
+                <div class="project-desc">
+                    A contextual bandit recommendation engine simulating real-time news personalization. Reduced cumulative regret (lost clicks) by 24x compared to baseline exploration strategies using a 6-dimensional user context vector.
+                </div>
+                <div class="btn-group">
+                    <a href="[YOUR_BANDIT_URL]" class="btn btn-primary" target="_blank">View Live App</a>
+                    <a href="https://github.com/PrashantSU/Contextual-bandit-news-recommendation" class="btn btn-secondary" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <!-- Project 2: Housing -->
+            <div class="project-card">
+                <div class="project-title">Stockholm Housing Valuation Engine</div>
+                <div class="project-tags">R • Inferential Stats • Regression • Explainable AI</div>
+                <div class="project-desc">
+                    A comprehensive two-phase study of 647 Stockholm housing units. Features a live log-linear regression predictor with an interactive feature contribution chart (XAI) and a detailed breakdown of hypothesis testing (Z-tests, T-tests).
+                </div>
+                <div class="btn-group">
+                    <a href="[YOUR_HOUSING_URL]" class="btn btn-primary" target="_blank">View Live App</a>
+                    <a href="https://github.com/PrashantSU/Inferential-Statistics-and-Multivariate-Regression-Modeling-of-Housing-Prices-in-Stockholm" class="btn btn-secondary" target="_blank">View Code</a>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+            <li>Python</li>
+            <li>PyTorch</li>
+            <li>R</li>
+            <li>Scikit-Learn</li>
+            <li>Reinforcement Learning</li>
+            <li>Statistical Inference</li>
+            <li>Streamlit</li>
+            <li>SQL</li>
+            <li>Docker</li>
+            <li>Apache Airflow</li>
+            <li>Git</li>
+        </ul>
+
+        <h2>Connect</h2>
+        <p>
+            <a href="https://www.linkedin.com/in/prashant-singh-173a89215/" style="color: var(--accent); font-weight: 600;">LinkedIn</a> • 
+            <a href="https://github.com/PrashantSU" style="color: var(--accent); font-weight: 600;">GitHub</a> • 
+            <a href="mailto:iamprashant1999@gmail.com" style="color: var(--accent); font-weight: 600;">Email</a>
+        </p>
+    </div>
+</body>
+</html>
